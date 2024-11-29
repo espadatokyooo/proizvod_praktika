@@ -1,0 +1,265 @@
+/* BODY */
+body {
+  background-color: #ffffff;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px
+}
+
+.header__img {
+    height: 64px;
+    width: 64px;
+}
+
+/* POSTS */
+.row {
+  padding: 50px 0;
+}
+.seperator {
+  margin-bottom: 30px;
+  width: 35px;
+  height: 3px;
+  background: #777;
+  border: none;
+}
+.title {
+  text-align: center;
+}
+.title .row {
+  padding: 50px 0 0;
+}
+.title h1 {
+  text-transform: uppercase;
+}
+.title .seperator {
+  margin: 0 auto 10px;
+}
+.item {
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 1px;
+  float: left;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.item .item-in {
+  background: #fff;
+  padding: 40px;
+  position: relative;
+}
+.item .item-in:hover:before {
+  width: 100%;
+}
+.item .item-in::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 0%;
+  background: #333333;
+  right: 0px;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+.item h4 {
+  font-size: 18px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.item p {
+  font-size: 12px;
+}
+.item a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+  margin-top: 10px;
+}
+.item a i {
+  opacity: 0;
+  padding-left: 0px;
+  transition: 0.4s;
+  font-size: 24px;
+  display: inline-block;
+  top: 5px;
+  position: relative;
+}
+.item a:hover {
+  text-decoration: none;
+}
+.item a:hover i {
+  padding-left: 10px;
+  opacity: 1;
+  font-weight: 300;
+}
+
+/* CARDS */
+
+.card {
+    background-color: #cdcdcd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* OBOI */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #cbcbcb;
+    padding: 50px;
+    text-align: center;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: url('https://i.pinimg.com/736x/0b/1c/61/0b1c61abc3d1de8138551695f8982de2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* CLIENTS */
+
+.form-control {
+  background-color: #cbcbcb;
+}
+
+.predupr {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.item-in {
+    padding: 20px; /* Отступ внутри элемента */
+    border: 1px solid #000000; /* Для визуальной разделительной линии */
+    border-radius: 5px;
+}
+
+.item-in .font-bold {
+    font-weight: bold;
+}
+.item-in h4 {
+    font-size: 1.2em; /* Изменение размера шрифта для заголовка */
+}
+
+.item-in h3 {
+    font-size: 1.1em; /* Изменение размера шрифта для текста */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nomer {
+    height: 5px;
+    background-color: #404040;
+    margin-bottom: 15px;
+}
+
+
+.sig-name p{
+   font-size: 1.4em;
+}
+
+.cli .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cli .item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* KONTACTS */
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.contact-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-item {
+  flex: 0 0 calc(100% - 10px);
+  max-width: calc(100% - 10px);
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+.msg {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-msg-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
